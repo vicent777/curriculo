@@ -1,0 +1,181 @@
+:root {
+    --corBranca: #ffffff;
+    --corTexto: #e0e0e0;
+    --corFundo: #121212;
+    --corPrincipal: #bb86fc;
+    --corSecundaria: #03dac6;
+    --corDestaque: #ff0266;
+    --corEscura: #1f1f1f;
+}
+
+body {
+    font-family: 'Sawarabi Mincho', serif;  
+    line-height: 1.6;
+    color: var(--corTexto);
+    background-color: var(--corFundo);
+    padding-top: 40px;
+    font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--corPrincipal);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--corEscura) !important;
+    box-shadow: 0 2px 4px rgba(46, 45, 45, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand {
+    flex: 1;
+    text-align: center;
+    color: var(--corBranca);
+}
+
+.navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    color: var(--corTexto);
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--corPrincipal);
+    color: var(--corEscura);
+}
+
+/* Seções */
+section {
+    padding: 2rem 0;
+}
+
+section[id] {
+    scroll-margin-top: 85px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    background-color: var(--corEscura);
+    color: var(--corTexto);
+    box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, .05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-destaque {
+    background-color: var(--corPrincipal);
+    color: var(--corEscura);
+}
+
+/* Formulário */
+fieldset {
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--corSecundaria);
+}
+
+.btn-corPrincipal {
+    background-color: var(--corPrincipal);
+    border-color: var(--corPrincipal);
+    color: #fff;
+}
+  
+.btn-corPrincipal:hover {
+    background-color: var(--corPrincipal); /* versão mais escura */
+    border-color: var(--corFundo);
+}
+
+button.formulario {
+    background-color: var(--corDestaque);
+    color: var(--corBranca);
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.formulario:hover {
+    background-color: var(--corPrincipal);
+    color: var(--corFundo);
+}
+
+/* Validação */
+.was-validated .form-control:invalid, 
+.was-validated .form-select:invalid,
+.was-validated .form-check-input:invalid {
+    border-color: var(--corDestaque);
+}
+
+.was-validated .form-control:valid, 
+.was-validated .form-select:valid,
+.was-validated .form-check-input:valid {
+    border-color: var(--corSecundaria);
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+.was-validated .form-control:invalid ~ .invalid-feedback,
+.was-validated .form-select:invalid ~ .invalid-feedback,
+.was-validated .form-check-input:invalid ~ .invalid-feedback {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: var(--corEscura);
+    color: var(--corTexto);
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+/* Outros elementos */
+.border-bottom {
+    border-bottom: 2px solid var(--corPrincipal) !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    #sobre .row {
+        flex-direction: column;
+    }
+
+    #sobre .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+    }
+}
