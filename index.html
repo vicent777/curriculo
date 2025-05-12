@@ -1,37 +1,393 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+ 
     <title>Currículo - Vinicius Nascimento</title>
 </head>
+
 <body>
-    <center>
-        <h1>Vinicius Nascimento</h1>
-    </center>
-
-    <hr>
-
-    <!--menu-->
-    <center><nav>
-        <a href="identificacao.html" target="main">Identificação</a>
-        <a href="formacao.html" target="main">Formação</a>
-        <a href="experiencia.html" target="main">Experiência</a>
-        <a href="skills.html" target="main">Soft Skills</a>
-        <a href="hardskills.html" target="main">Hard Skills</a>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="#">Vinicius Nascimento</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formacao">Formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    
 
-    <hr>
+    <main class="container mt-5 pt-4">
+        <section id="sobre" class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="img/DRO.gif" alt="Vinicius Nascimento" class="img-fluid rounded mb-2" width="500" height="500">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4">Vinicius Henrique Silva Nascimento</h1>
+                    <p class="lead mt-3">
+                        Profissional de dados em formação, com experiência como Cientista e Analista de Dados. Especializado em 
+                        extração, manipulação e visualização de dados utilizando Python, SQL e Power BI. Possuo experiência em 
+                        automatização de processos e controle de qualidade de dados, garantindo integridade e eficiência na análise. 
+                        Além disso, tenho conhecimento em Databricks e modelagem de dados, contribuindo para a otimização e 
+                        transformação digital dos processos.
+                    </p>
+                    <div class="mt-3">
+                        <a href="tel:+5581997745748" class="btn btn-outline-primary me-2">
+                            <i class="bi bi-telephone"></i> (81) 99774-5748
+                        </a>
+                        <a href="mailto:viniciushx@gmail.com" class="btn btn-outline-primary me-2">
+                            <i class="bi bi-envelope"></i> viniciushx@gmail.com
+                        </a>
+                        <a href="http://br.linkedin.com/in/vinicius-nascimento-673230244" target="_blank" class="btn btn-outline-primary me-2">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/vicent777" target="_blank" class="btn btn-outline-primary">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <h3 class="border-bottom pb-2">Endereço</h3>
+                <div class="text-center mt-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1087436067332!2d-34.8869427!3d-8.0903919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f3f165b5587%3A0x5446ada6a641048c!2sR.%20Doze%20de%20Julho%20-%20Pina%2C%20Recife%20-%20PE%2C%2051011-100!5e0!3m2!1spt-BR!2sbr!4v1743726104262!5m2!1spt-BR!2sbr" 
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
 
-    <iframe src="identificacao.html" width="1600px" height="400px" name="main"></iframe>
-    </center>
 
-    <hr>
+        <section id="formacao" class="my-5">
+            <h2 class="border-bottom pb-2">Formação Acadêmica</h2>
+            <div class="accordion" id="formacaoAccordion">
+          
+              <div class="accordion-item mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#form1">
+                    Tecnólogo em Análise e Desenvolvimento de Sistemas
+                  </button>
+                </h3>
+                <div id="form1" class="accordion-collapse collapse show" data-bs-parent="#formacaoAccordion">
+                  <div class="accordion-body">
+                    <p><strong>Faculdade Senac Pernambuco</strong></p>
+                    <p><small>Período: 2023 - Cursando</small></p>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#form2">
+                    Bacharelado em Turismo
+                  </button>
+                </h3>
+                <div id="form2" class="accordion-collapse collapse" data-bs-parent="#formacaoAccordion">
+                  <div class="accordion-body">
+                    <p><strong>Universidade Federal de Pernambuco</strong></p>
+                    <p><small>Período: 2014 - 2022</small></p>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </section>
 
-    <footer style="text-align:center; font-size:14px; color:gray; margin-top:20px;">
-        Powered by Vinicius Nascimento - 2025
+          
+
+        <section id="experiencia" class="my-5">
+            <h2 class="border-bottom pb-2">Experiência Profissional</h2>
+            <div class="accordion" id="experienciaAccordion">
+          
+              <div class="accordion-item mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#exp1">
+                    Analista de Dados (estágio) - Marketing/Controladoria
+                  </button>
+                </h3>
+                <div id="exp1" class="accordion-collapse collapse show" data-bs-parent="#experienciaAccordion">
+                  <div class="accordion-body">
+                    <p><strong>Terra Tecnologia - Jaboatão dos Guararapes, Pernambuco, Brasil | Período:</strong> 02/2025 - Atual</p>
+                    <ul>
+                      <li>Criação de processos ETL em Python e SQL (Oracle) para organização e integração de dados no setor agro, 
+                                    garantindo qualidade e disponibilidade para análises operacionais e estratégicas.</li>
+                                <li>Desenvolvimento de dashboards no Power BI com modelagem eficiente de dados e integração de fontes 
+                                    diversas, apoiando decisões estratégicas com base em dados consistentes e atualizados.</li>
+                                <li>Automação de fluxos de dados, reduzindo o tempo de análise e aumentando a produtividade das operações 
+                                    por meio de processos otimizados.</li>
+                                <li>Atendimento a chamados técnicos via GLPI, com foco em suporte ao ERP Siagri, assegurando a continuidade 
+                                    dos processos operacionais e a fluidez das rotinas de negócio.</li>
+                                <li>Resolução de problemas técnicos, incluindo criação, atualização e liberação de cadastros, ajustes de 
+                                    permissões em relatórios e configurações específicas no ERP.</li>
+                                <li>Suporte remoto a usuários via AnyDesk, garantindo agilidade na resolução de problemas técnicos e 
+                                    contribuindo para a continuidade das atividades operacionais.</li>
+                                <li>Análise de dados em Python com uso de bibliotecas como pandas, numpy e matplotlib, gerando insights e 
+                                    visualizações personalizadas para apoio à tomada de decisão.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="accordion-item mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp2">
+                    Cientista de Dados (estágio) - Educacional
+                  </button>
+                </h3>
+                <div id="exp2" class="accordion-collapse collapse" data-bs-parent="#experienciaAccordion">
+                  <div class="accordion-body">
+                    <p><strong>IEFP - Viana do Castelo, Portugal | Período:</strong> Nov 2023 - Mai 2024</p>
+                    <ul>
+                        <li>Organização e gerenciamento de grandes volumes de dados, com criação de bases otimizadas em MySQL 
+                            para acesso rápido e eficiente.</li>
+                        <li>Processamento e limpeza de dados utilizando Python (Pandas, NumPy), reduzindo significativamente o 
+                            tempo de preparação para análises.</li>
+                        <li>Desenvolvimento de modelos preditivos com Scikit-learn, aplicando métricas como MAE para fornecer 
+                            previsões confiáveis e apoiar a definição de estratégias.</li>
+                        <li>Elaboração de relatórios analíticos e apresentações de insights, contribuindo para decisões orientadas por 
+                            dados.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </section>
+          
+
+        <section id="habilidades" class="my-5">
+            <h2 class="border-bottom pb-2">Habilidades Técnicas</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header card-destaque">
+                            Linguagens e Ferramentas
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Python (Pandas, NumPy, Scikit-learn)</li>
+                                <li class="list-group-item">SQL (PostgreSQL, MySQL, Oracle)</li>
+                                <li class="list-group-item">Power BI</li>
+                                <li class="list-group-item">Databricks</li>
+                                <li class="list-group-item">Docker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header card-destaque">
+                            Competências
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Análise e Visualização de Dados</li>
+                                <li class="list-group-item">Machine Learning</li>
+                                <li class="list-group-item">Modelagem de Dados</li>
+                                <li class="list-group-item">Automatização de Processos</li>
+                                <li class="list-group-item">Pensamento Analítico</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="my-5">
+            <h2 class="pb-2" style="color: #03dac6;">Formulário de Contato</h2>
+            <form id="formContato" class="needs-validation" novalidate>
+                <fieldset class="mb-4 p-3 border rounded">
+                    <legend class="w-auto px-2">Informações Pessoais</legend>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="nome" class="form-label">Nome*</label>
+                            <input type="text" class="form-control" id="nome" required>
+                            <div class="invalid-feedback">Por favor, informe seu nome.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="sobrenome" class="form-label">Sobrenome*</label>
+                            <input type="text" class="form-control" id="sobrenome" required>
+                            <div class="invalid-feedback">Por favor, informe seu sobrenome.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="telefone" class="form-label">Telefone*</label>
+                            <input type="tel" class="form-control" id="telefone" 
+                                   pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" 
+                                   placeholder="(00) 00000-0000" required>
+                            <div class="invalid-feedback">Por favor, informe um telefone válido.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Por favor, informe um email válido.</div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="mb-4 p-3 border rounded">
+                    <legend class="w-auto px-2">Informações Profissionais</legend>
+                    
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem*</label>
+                        <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+                        <div class="invalid-feedback">Por favor, escreva sua mensagem.</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="lingua" class="form-label">Língua aplicada no serviço*</label>
+                        <select class="form-select" id="lingua" required>
+                            <option value="" selected disabled>Selecione...</option>
+                            <option value="ingles">Inglês</option>
+                            <option value="espanhol">Espanhol</option>
+                            <option value="frances">Francês</option>
+                            <option value="portugues">Português (pt-br)</option>
+                        </select>
+                        <div class="invalid-feedback">Por favor, selecione uma língua.</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="prototipo" class="form-label">Upload de protótipo* (PDF, DOC, DOCX, JPEG ou PNG)</label>
+                        <input class="form-control" type="file" id="prototipo" 
+                               accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" required>
+                        <div class="invalid-feedback">Por favor, selecione um arquivo válido.</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Linguagens preferidas* (múltipla escolha)</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="python" value="Python" required>
+                            <label class="form-check-label" for="python">Python</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="sql" value="SQL">
+                            <label class="form-check-label" for="sql">SQL</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="powerbi" value="Power BI">
+                            <label class="form-check-label" for="powerbi">Power BI</label>
+                        </div>
+                        <div class="invalid-feedback">Selecione pelo menos uma linguagem.</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Banco de dados recomendado*</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="bancoDados" id="mysql" value="MySQL" required>
+                            <label class="form-check-label" for="mysql">MySQL</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="bancoDados" id="postgresql" value="PostgreSQL">
+                            <label class="form-check-label" for="postgresql">PostgreSQL</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="bancoDados" id="sqlserver" value="SQL Server">
+                            <label class="form-check-label" for="sqlserver">OracleDB</label>
+                        </div>
+                        <div class="invalid-feedback">Selecione uma opção.</div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="turno" class="form-label">Turno de preferência para reuniões*</label>
+                            <select class="form-select" id="turno" required>
+                                <option value="" selected disabled>Selecione...</option>
+                                <option value="manha">Manhã</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noite">Noite</option>
+                            </select>
+                            <div class="invalid-feedback">Selecione um turno.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="horario" class="form-label">Melhor horário para reuniões*</label>
+                            <input type="time" class="form-control" id="horario" required>
+                            <div class="invalid-feedback">Informe um horário.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="previsao" class="form-label">Previsão de entrega*</label>
+                            <input type="date" class="form-control" id="previsao" required>
+                            <div class="invalid-feedback">Informe uma data.</div>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <div class="d-flex justify-content-end gap-2">
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                    <button type="submit" class="btn btn-corPrincipal">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">Desenvolvido por Vinicius Nascimento - &copy; <span id="anoAtual"></span></p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Atualiza o ano no footer
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+        
+        // Validação do formulário
+        (function() {
+            'use strict';
+            
+            var form = document.getElementById('formContato');
+            
+            form.addEventListener('submit', function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                
+                form.classList.add('was-validated');
+            }, false);
+            
+            // Máscara para telefone
+            var telefone = document.getElementById('telefone');
+            telefone.addEventListener('input', function(e) {
+                var value = e.target.value.replace(/\D/g, '');
+                if (value.length > 2) {
+                    value = '(' + value.substring(0,2) + ') ' + value.substring(2);
+                }
+                if (value.length > 10) {
+                    value = value.substring(0,10) + '-' + value.substring(10,14);
+                }
+                e.target.value = value;
+            });
+        })();
+    </script>
 </body>
 </html>
